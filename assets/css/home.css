@@ -1,0 +1,19 @@
+header {
+    background-color: #b8e4f2;
+    padding: 10px;
+    margin:  10px 0;
+}
+main {
+    background: rgb(145, 229, 97);
+    padding: 10px;
+}
+section {
+    background-color: #fef993;
+    padding: 5px;
+    margin: 10px 0;
+}
+footer {
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #ee92f4;
+}
