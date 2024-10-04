@@ -22,4 +22,6 @@ The site is deployed using Github actions. The [action](https://github.com/oilst
 
 ---
 
+Gijs de Boer <info@supergijs.com>
+Elliott Cost <email@elliott.computer>
 October 2024
