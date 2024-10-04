@@ -10,6 +10,10 @@ The CMS panel can be accessed at [werkbank.today/panel](werkbank.today/panel)
 
 Pull this repo and run `php -S localhost:8000 kirby/router.php`.
 
+To pull the `/content` folder locally run in the local project directory.
+
+`rsync -avz --delete -e 'ssh -p 26' bh115544@h36.mijn.host:/home/bh115544/public_html/content ./content`
+
 ## Production
 
 Gijs setup a server at Mijnhost (https://mijn.host). The backend is located on the server at `/home/bh115544/public_html`
