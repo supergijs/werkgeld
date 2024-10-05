@@ -10,7 +10,7 @@ The CMS panel can be accessed at [werkbank.today/panel](werkbank.today/panel)
 
 Pull this repo and run `php -S localhost:8000 kirby/router.php`.
 
-To pull the `/content` folder locally run in the local project directory.
+To pull the `/content` folder locally run this rsync command in the local project directory. Warning: this overwrites the existing content folder.
 
 `rsync -avz --delete -e 'ssh -p 26' bh115544@h36.mijn.host:/home/bh115544/public_html/content ./content`
 
