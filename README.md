@@ -6,7 +6,7 @@ The backend of werkbank.today is built with [Kirby CMS](https://getkirby.com/) (
 
 The CMS panel can be accessed at [werkbank.today/panel](werkbank.today/panel)
 
-## Development
+## Running the site locally
 
 Pull this repo and run `php -S localhost:8000 kirby/router.php`.
 
