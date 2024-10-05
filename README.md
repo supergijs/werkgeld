@@ -20,9 +20,9 @@ Gijs setup a server at Mijnhost (https://mijn.host). The backend is located on t
 
 ⚠️ Never make changes directly to this server directory otherwise the deployment action will fail. This is also best practice since Git is a version control system.
 
-The site is deployed using Github actions. The [action](https://github.com/oilstel/werkgeld/blob/main/.github/workflows/deploy.yml) uses ssh and and runs `git pull` on the server.
+The site is deployed using Github actions. The action uses ssh and and runs `git pull` on the server.
 
-`/content` and `/media` are added to the .gitignore file and should never be committed. You can always ftp into the server to download the most recent versions of these directories.
+`/content` and `/media` are added to the .gitignore file and should never be committed. You can always ftp into the server to download the most recent versions of these directories or use the rsync command above.
 
 ---
 
