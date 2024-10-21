@@ -1,19 +1,52 @@
-header {
-    background-color: #b8e4f2;
-    padding: 10px;
-    margin:  10px 0;
+body{
+    margin:0;
+    background-color: lightgoldenrodyellow;
+    min-height: 100dvh;
 }
+header {
+    /* background-color: #b8e4f2; */
+    padding: 50px 0;
+    margin:  0 auto;
+    width: 500px;
+    text-align: center;
+}
+
+hr{
+    border-top: 0.5px solid black;
+    height: 0;
+}
+
+header h1, h2{
+    font-weight: normal;
+    margin: 0;
+}
+
 main {
-    background: rgb(145, 229, 97);
-    padding: 10px;
+    /* background: rgb(145, 229, 97); */
+    padding: 0px;
+    margin:  0 auto;
+    width: 500px;
 }
 section {
-    background-color: #fef993;
+    /* background-color: #fef993; */
     padding: 5px;
     margin: 10px 0;
 }
+
+section h2{
+
+}
+
+section p{
+
+}
+
 footer {
+    position:absolute;
+    bottom: 0;
     padding: 5px;
-    margin-top: 10px;
-    background-color: #ee92f4;
+    margin: 0px;
+    text-align: right;
+    font-size: 0.5em;
+    background-color: lightgoldenrodyellow;
 }
