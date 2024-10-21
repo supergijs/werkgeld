@@ -34,7 +34,7 @@ section {
 }
 
 section h2{
-
+    text-transform: lowercase;
 }
 
 section p{
