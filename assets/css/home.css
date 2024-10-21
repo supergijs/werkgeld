@@ -2,6 +2,7 @@ body{
     margin:0;
     background-color: lightgoldenrodyellow;
     min-height: 100dvh;
+    scroll-behavior: smooth;
 }
 header {
     /* background-color: #b8e4f2; */
@@ -11,14 +12,32 @@ header {
     text-align: center;
 }
 
-hr{
-    border-top: 0.5px solid black;
-    height: 0;
-}
-
 header h1, h2{
     font-weight: normal;
     margin: 0;
+}
+
+nav{
+    display: block;
+    position:fixed;
+    top: 10px;
+    width: 200px;
+    padding: 10px;
+}
+
+nav a{
+    color: inherit;
+    text-decoration: none;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    text-transform: lowercase;
+}
+
+nav a:hover{
+    text-decoration: underline;
 }
 
 main {
@@ -27,6 +46,12 @@ main {
     margin:  0 auto;
     width: 500px;
 }
+
+hr{
+    border-top: 0.5px solid black;
+    height: 0;
+}
+
 section {
     /* background-color: #fef993; */
     padding: 5px;
@@ -42,11 +67,11 @@ section p{
 }
 
 footer {
-    position:absolute;
+    /* position:absolute; */
     bottom: 0;
     padding: 5px;
     margin: 0px;
-    text-align: right;
+    text-align: center;
     font-size: 0.5em;
     background-color: lightgoldenrodyellow;
 }

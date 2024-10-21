@@ -3,6 +3,9 @@
 <!-- Header -->
 <?php snippet('header') ?>
 
+<!-- Nav -->
+<?php snippet('menu') ?>
+
 <!-- Main -->
 <main>
     <!-- Sections -->
