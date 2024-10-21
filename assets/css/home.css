@@ -2,7 +2,6 @@ body{
     margin:0;
     background-color: lightgoldenrodyellow;
     min-height: 100dvh;
-    scroll-behavior: smooth;
 }
 header {
     /* background-color: #b8e4f2; */

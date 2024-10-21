@@ -8,6 +8,9 @@ fields:
   subtitle:
     label: Page Subtitle
     type: text
+  intro:
+    label: Page intro
+    type: text
   
   sections:
     label: Sections
