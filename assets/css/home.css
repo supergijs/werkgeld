@@ -94,11 +94,11 @@ section details summary{
     font-style: italic;
     font-size: 1.1em;
     line-height: 2;
+    cursor: pointer;
 }
 
 section details summary:hover{
     color: var(--linkcolor);
-    cursor: pointer;
 }
 
 summary::-webkit-details-marker{
