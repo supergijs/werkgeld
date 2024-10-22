@@ -1,5 +1,5 @@
     <nav>
-    <a href="#">WERKBANK</a>
+    <a href="#">WERKGELD</a>
     <ul>
         <?php foreach ($site->sections()->toStructure() as $section): ?>
         <li> 
