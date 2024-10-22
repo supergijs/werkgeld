@@ -1,3 +1,7 @@
+html{
+    --linkcolor: blue;
+}
+
 body{
     margin:0;
     background-color: lightgoldenrodyellow;
@@ -79,14 +83,23 @@ section p{
 section details{
     margin-bottom: 0.5em;
     border: 1px solid black;
-    padding: 0.5em;
+    padding: 0.5em 1em;
 }
 section details summary{
     font-style: italic;
     font-size: 1.1em;
-    line-height: 1.5;
+    line-height: 2;
 }
 
+section details summary:hover{
+    color: var(--linkcolor);
+    cursor: pointer;
+}
+
+summary::-webkit-details-marker{
+    /* opacity: 0.3; */
+    /* margin-left:-1em; */
+}
 section details:hover{
     background-color: rgba(0,0,0,0.1);
 }
