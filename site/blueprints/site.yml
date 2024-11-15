@@ -21,6 +21,7 @@ sections:
         type: headline
         numbered: true
 
+      # Sections
       sections:
         label: ' '
         type: structure
@@ -38,16 +39,20 @@ sections:
             label: Section Image
             type: files
 
+      # Comments
       comments_header:
-        label: Comments Header
+        label: Comments
         type: headline
       enable_comments:
         label: Enable Comments
         type: toggle
-
+        width: 1/8
       comments:
         label: Comments
         type: structure
+        when:
+          enable_comments: true 
+
         fields:
           commentName:
             label: Name
@@ -67,6 +72,7 @@ sections:
             type: toggle
             default: false
 
+      # Footer
       footer_header:
         label: Footer
         type: headline
@@ -78,11 +84,3 @@ sections:
 
       line:
         type: line
-
-  stats:
-    type: stats
-    reports:
-      - label: Pending Comments
-        value: "{{ site.numberOfPendingComments }}"
-        info: "Possible spam: {{ site.numberOfSpamComments }}"
-        theme: negative

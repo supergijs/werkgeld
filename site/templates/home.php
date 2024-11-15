@@ -23,7 +23,9 @@
     <?php endforeach ?>
 
     <!-- Comments -->
-    <?php snippet('comments') ?>
+    <?php if ($site->enable_comments()->toBool()): ?>
+        <?php snippet('comments') ?>
+    <?php endif ?>
 </main>
 
 <!-- Footer -->
