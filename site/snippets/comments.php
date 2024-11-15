@@ -37,6 +37,7 @@
         <div id="comments">
             <h2>Comments</h2>
             <?php foreach ($site->comments()->toStructure()->flip() as $comment): ?>
+                <?php if($comment->commentPublished()->toBool()): ?>
                 <div class="comment">
                     <div class="name"><?= esc($comment->commentName()) ?></div>
                     <time><?= $comment->commentDate()->toDate('F j, Y, g:i a') ?></time>
@@ -44,6 +45,7 @@
                         <p><?= esc($comment->commentContent()) ?></p>
                     </div>
                 </div>
+                <?php endif ?>
             <?php endforeach ?>
         </div>
 </div>
