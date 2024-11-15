@@ -6,6 +6,8 @@
 <!-- Nav -->
 <?php snippet('menu') ?>
 
+
+
 <!-- Main -->
 <main>
     <!-- Sections -->
@@ -19,6 +21,9 @@
         <!-- <hr> -->
     </section>
     <?php endforeach ?>
+
+    <!-- Comments -->
+    <?php snippet('comments') ?>
 </main>
 
 <!-- Footer -->
