@@ -1,86 +1,93 @@
 title: Home
-preset: page
 
-
-sections:  
-  siteContent:
-    type: fields
-    fields:
-      title:
-        label: Page Title
-        type: text
-      subtitle:
-        label: Page Subtitle
-        type: text
-      intro:
-        label: Page Intro
-        type: text
-
-      sections_header:
-        label: Sections
-        type: headline
-        numbered: true
-
-      # Sections
-      sections:
-        label: ' '
-        type: structure
+columns:
+  main:
+    width: 2/3
+    sections:
+      fields:
+        type: fields
         fields:
-          section_header:
-            label: Section Header
+          title:
+            label: Page Title
             type: text
-          id_name:
-            label: '#css-id'
+          subtitle:
+            label: Page Subtitle
             type: text
-          section_body:
-            label: Section Body
-            type: textarea
-          section_image:
-            label: Section Image
-            type: files
+          intro:
+            label: Page Intro
+            type: text
 
-      # Comments
-      comments_header:
-        label: Comments
-        type: headline
-      enable_comments:
-        label: Enable Comments
-        type: toggle
-        width: 1/4
-      comments:
-        label: Comments
-        type: structure
-        when:
-          enable_comments: true 
+          sections_header:
+            label: Sections
+            type: headline
+            numbered: true
 
-        fields:
-          commentName:
-            label: Name
-            type: text
-          commentEmail:
-            label: Email
-            type: email
-          commentcontent:
-            label: Content
-            type: textarea
-          commentDate:
-            label: Date
-            type: date
-            time: true
-          commentPublished:
-            label: Published
+          # Sections
+          sections:
+            label: ' '
+            type: structure
+            fields:
+              section_header:
+                label: Section Header
+                type: text
+              id_name:
+                label: '#css-id'
+                type: text
+              section_body:
+                label: Section Body
+                type: textarea
+              section_image:
+                label: Section Image
+                type: files
+
+          # Comments
+          comments_header:
+            label: Comments
+            type: headline
+          enable_comments:
+            label: Enable Comments
             type: toggle
-            default: false
+            width: 1/4
+          comments:
+            label: Comments
+            type: structure
+            when:
+              enable_comments: true 
 
-      # Footer
-      footer_header:
-        label: Footer
-        type: headline
-        numbered: true
+            fields:
+              commentName:
+                label: Name
+                type: text
+              commentEmail:
+                label: Email
+                type: email
+              commentcontent:
+                label: Content
+                type: textarea
+              commentDate:
+                label: Date
+                type: date
+                time: true
+              commentPublished:
+                label: Published
+                type: toggle
+                default: false
 
-      footer:
-        label: Footer Text
-        type: textarea
+          # Footer
+          footer_header:
+            label: Footer
+            type: headline
+            numbered: true
 
-      line:
-        type: line
+          footer:
+            label: Footer Text
+            type: textarea
+
+          line:
+            type: line
+  sidebar:
+    width: 1/3
+    sections:
+      pages:
+        type: pages
+
