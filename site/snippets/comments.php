@@ -1,6 +1,6 @@
 <!-- Comments Section -->
 <div id="comments-section">
-    <h2>Leave a Comment</h2>
+    <h2>Laat een reactie achter</h2>
 
         <!-- Display Alerts -->
         <?php if (!empty($alerts)): ?>
@@ -20,7 +20,7 @@
         <form action="<?= $page->url() ?>#comments" method="post" enctype="multipart/form-data">
           <div class="form-group">
             <!-- <label for="name">Name:</label> -->
-            <input type="text" id="name" name="name" placeholder="Name" value="<?= esc($data['name'] ?? '') ?>" required>
+            <input type="text" id="name" name="name" placeholder="Naam" value="<?= esc($data['name'] ?? '') ?>" required>
           </div>
           <div class="form-group">
             <!-- <label for="email">Email:</label> -->
@@ -28,14 +28,14 @@
           </div>
           <div class="form-group">
             <!-- <label for="comment">Comment:</label> -->
-            <textarea id="comment" name="comment" rows="5" placeholder="Comment" required><?= esc($data['comment'] ?? '') ?></textarea>
+            <textarea id="comment" name="comment" rows="5" placeholder="Reactie" required><?= esc($data['comment'] ?? '') ?></textarea>
           </div>
-          <input type="submit" name="submit" value="Submit" class="button">
+          <input type="submit" name="submit" value="Reageer" class="button">
         </form>
 
         <!-- Display Comments -->
         <div id="comments">
-            <h2>Comments</h2>
+            <h2>Reacties</h2>
             <?php foreach ($site->comments()->toStructure()->flip() as $comment): ?>
                 <?php if($comment->commentPublished()->toBool()): ?>
                 <div class="comment">
