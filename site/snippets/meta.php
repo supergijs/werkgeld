@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?= css('assets/css/global.css', '@auto') ?>
+    <?= css('assets/css/global.css?v=1.2') ?>
     <?php
     if(page()->template() == 'home') {
-        echo css('assets/css/home.css', '@auto');
+        echo css('assets/css/home.css?v=1.2');
     }
     ?>
     <title><?= $site->title() ?></title>
