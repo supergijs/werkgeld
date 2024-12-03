@@ -61,8 +61,10 @@ main {
     /* background: rgb(145, 229, 97); */
     padding: 0px;
     margin:  0 auto;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     line-height: 1.3;
+    padding: 8px;
 }
 
 hr{
@@ -118,7 +120,9 @@ form input, form textarea{
 .form-group{
     margin-bottom: 10px;
 }
-input[type="submit"] {
+input[type="submit"], #contact #copy-btn {
+    font-family: inherit;
+    font-size: inherit;
     color: #000;
     background-color: var(--linkcolor);
     background: transparent;
@@ -128,10 +132,10 @@ input[type="submit"] {
     padding: 5px 10px;
     cursor: pointer;
 }
-input[type="submit"]:hover{
+input[type="submit"]:hover, #contact #copy-btn:hover {
     background-color: #0000000e;
 }
-.form-group input[type="text"], .form-group input[type="email"],.form-group textarea {
+.form-group input[type="text"], .form-group input[type="email"], .form-group textarea {
     width: 100%;
     resize: none;
     border: 1px solid black;
@@ -175,4 +179,15 @@ footer {
     text-align: center;
     font-size: 0.5em;
     background-color: lightgoldenrodyellow;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid black;
+  padding: 20px;
 }

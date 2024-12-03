@@ -24,6 +24,12 @@
         <?php endforeach ?>
         </div>
         <?php endif ?>
+        <!-- Extra Content -->
+        <?php if ($section->extra_content()->isNotEmpty()): ?>
+          <div class="extra-content">
+            <?= $section->extra_content()->kt() ?>
+          </div>
+        <?php endif ?>
     </section>
     <?php endforeach ?>
 

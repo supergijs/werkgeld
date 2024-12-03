@@ -50,6 +50,10 @@ columns:
               # section_image:
               #   label: Section Image
               #   type: files
+              extra_content:
+                label: Extra Content
+                type: textarea
+                editable: false
 
           # Comments
           comments_header:
