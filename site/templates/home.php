@@ -26,6 +26,7 @@
         <?php endif ?>
         <!-- Extra Content -->
         <?php if ($section->extra_content()->isNotEmpty()): ?>
+          <br>
           <div class="extra-content">
             <?= $section->extra_content()->kt() ?>
           </div>
