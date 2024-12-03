@@ -33,12 +33,23 @@ columns:
               id_name:
                 label: '#css-id'
                 type: text
+                type: hidden
               section_body:
                 label: Section Body
                 type: textarea
-              section_image:
-                label: Section Image
-                type: files
+              sub_sections:
+                label: Sub Sections
+                type: structure
+                fields:
+                  sub_section_header:
+                    label: Sub Section Header
+                    type: text
+                  sub_section_body:
+                    label: Sub Section Body
+                    type: textarea
+              # section_image:
+              #   label: Section Image
+              #   type: files
 
           # Comments
           comments_header:

@@ -6,8 +6,6 @@
 <!-- Nav -->
 <?php snippet('menu') ?>
 
-
-
 <!-- Main -->
 <main>
     <!-- Sections -->
@@ -15,10 +13,17 @@
     <section id="<?= $section->id_name() ?>">
         <h2><?= $section->section_header() ?></h2>
         <p><?= $section->section_body()->kt() ?></p>
-        <?php if($image = $section->section_image()->toFile()): ?>
-            <img src="<?= $image->url() ?>" alt="Section Image">
+        <?php if ($section->sub_sections()->isNotEmpty()): ?>
+        <!-- Sub Sections -->
+        <div class="sub-sections">
+        <?php foreach ($section->sub_sections()->toStructure() as $sub_section): ?>
+            <details class="sub-section">
+                <summary><?= $sub_section->sub_section_header() ?></summary>
+                <p><?= $sub_section->sub_section_body()->kt() ?></p>
+            </details>
+        <?php endforeach ?>
+        </div>
         <?php endif ?>
-        <!-- <hr> -->
     </section>
     <?php endforeach ?>
 
