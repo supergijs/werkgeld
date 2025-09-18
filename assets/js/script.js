@@ -17,7 +17,7 @@ function copyEmail() {
 
     // Change the button text to indicate successful copy
     var button = document.getElementById('copy-btn');
-    button.innerText = 'Copied';
+    button.innerText = 'Gekopieërd';
 
     // Revert the button text after 3 seconds (adjust as needed)
     setTimeout(function() {

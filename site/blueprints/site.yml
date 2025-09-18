@@ -58,10 +58,10 @@ tabs:
                       sub_section_body:
                         label: Sub Section Body
                         type: textarea
-                  extra_content:
-                    label: Extra Content
-                    type: textarea
-                    editable: false
+                  # extra_content:
+                  #   label: Extra Content
+                  #   type: textarea
+                  #   editable: false
 
               # Comments
               comments_header:
