@@ -10,7 +10,7 @@ tabs:
           fields:
             type: fields
             fields:
-              image:
+              header_image:
                 label: Header Image
                 type: files
               title:

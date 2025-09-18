@@ -1,5 +1,5 @@
 <header>
-    <?php if ($image = $site->image()->toFile()): ?>
+    <?php if ($image = $site->header_image()->toFile()): ?>
         <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
         <?php endif ?>
     <h1><?= $site->title() ?></h1>
