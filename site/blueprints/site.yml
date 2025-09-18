@@ -1,108 +1,121 @@
 title: Home
 
-columns:
-  main:
-    width: 2/3
-    sections:
-      fields:
-        type: fields
-        fields:
-          title:
-            label: Page Title
-            type: text
-          subtitle:
-            label: Page Subtitle
-            type: text
-          intro:
-            label: Page Intro
-            type: text
-
-          sections_header:
-            label: Sections
-            type: headline
-            numbered: true
-
-          # Sections
-          sections:
-            label: ' '
-            type: structure
+tabs:
+  content:
+    label: Content
+    columns:
+      main:
+        width: 2/3
+        sections:
+          fields:
+            type: fields
             fields:
-              section_header:
-                label: Section Header
+              title:
+                label: Page Title
                 type: text
-              id_name:
-                label: '#css-id'
+              subtitle:
+                label: Page Subtitle
                 type: text
-                # type: hidden
-              section_body:
-                label: Section Body
-                type: textarea
-              sub_sections:
-                label: Sub Sections
+              intro:
+                label: Page Intro
+                type: text
+
+              sections_header:
+                label: Sections
+                type: headline
+                numbered: true
+
+              # Sections
+              sections:
+                label: ' '
                 type: structure
                 fields:
-                  sub_section_header:
-                    label: Sub Section Header
+                  section_header:
+                    label: Section Header
                     type: text
-                  sub_section_body:
-                    label: Sub Section Body
+                  id_name:
+                    label: '#css-id'
+                    type: text
+                    # type: hidden
+                  section_body:
+                    label: Section Body
                     type: textarea
-              # section_image:
-              #   label: Section Image
-              #   type: files
-              extra_content:
-                label: Extra Content
-                type: textarea
-                editable: false
+                  sub_sections:
+                    label: Sub Sections
+                    type: structure
+                    fields:
+                      sub_section_header:
+                        label: Sub Section Header
+                        type: text
+                      sub_section_body:
+                        label: Sub Section Body
+                        type: textarea
+                  # section_image:
+                  #   label: Section Image
+                  #   type: files
+                  extra_content:
+                    label: Extra Content
+                    type: textarea
+                    editable: false
 
-          # Comments
-          comments_header:
-            label: Comments
-            type: headline
-          enable_comments:
-            label: Enable Comments
-            type: toggle
-            width: 1/4
-          comments:
-            label: Comments
-            type: structure
-            when:
-              enable_comments: true 
-
-            fields:
-              commentName:
-                label: Name
-                type: text
-              commentEmail:
-                label: Email
-                type: email
-              commentcontent:
-                label: Content
-                type: textarea
-              commentDate:
-                label: Date
-                type: date
-                time: true
-              commentPublished:
-                label: Published
+              # Comments
+              comments_header:
+                label: Comments
+                type: headline
+              enable_comments:
+                label: Enable Comments
                 type: toggle
-                default: false
+                width: 1/4
+              comments:
+                label: Comments
+                type: structure
+                when:
+                  enable_comments: true 
+                fields:
+                  commentName:
+                    label: Name
+                    type: text
+                  commentEmail:
+                    label: Email
+                    type: email
+                  commentcontent:
+                    label: Content
+                    type: textarea
+                  commentDate:
+                    label: Date
+                    type: date
+                    time: true
+                  commentPublished:
+                    label: Published
+                    type: toggle
+                    default: false
 
-          # Footer
-          footer_header:
-            label: Footer
-            type: headline
-            numbered: true
+              # Footer
+              footer_header:
+                label: Footer
+                type: headline
+                numbered: true
 
-          footer:
-            label: Footer Text
-            type: textarea
+              footer:
+                label: Footer Text
+                type: textarea
 
-          line:
-            type: line
-  sidebar:
-    width: 1/3
+              line:
+                type: line
+      sidebar:
+        width: 1/3
+        sections:
+          pages:
+            type: pages
+  files:
+    label: All Files
+    icon: files
     sections:
-      pages:
-        type: pages
+      all_files:
+        type: files
+        headline: All Files
+        layout: cards
+        size: small
+        image:
+          cover: true
 
