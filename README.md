@@ -24,6 +24,13 @@ The site is deployed using Github actions. The action uses ssh and and runs `git
 
 `/content` and `/media` are added to the .gitignore file and should never be committed. You can always ftp into the server to download the most recent versions of these directories or use the rsync command above.
 
+## Push
+
+git add .   
+git commit -m '[message]'
+git push
+
+If conflict: git pull
 ---
 
 Gijs de Boer <info@supergijs.com><br>
