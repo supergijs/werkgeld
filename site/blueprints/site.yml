@@ -37,6 +37,9 @@ tabs:
                     label: '#css-id'
                     type: text
                     # type: hidden
+                  section_image:
+                    label: Section Image
+                    type: files
                   section_body:
                     label: Section Body
                     type: textarea
@@ -50,13 +53,10 @@ tabs:
                       sub_section_body:
                         label: Sub Section Body
                         type: textarea
-                  # section_image:
-                  #   label: Section Image
-                  #   type: files
-                  extra_content:
-                    label: Extra Content
-                    type: textarea
-                    editable: false
+                  # extra_content:
+                  #   label: Extra Content
+                  #   type: textarea
+                  #   editable: false
 
               # Comments
               comments_header:
