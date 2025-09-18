@@ -86,6 +86,9 @@ section h2{
     font-size: 1.8em;
 }
 
+section figure{
+    width: 100%;
+}
 section p{
 
 }

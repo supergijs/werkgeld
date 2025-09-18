@@ -1,6 +1,6 @@
 <!-- Comments Section -->
 <div id="comments-section">
-    <h2>Laat een reactie achter</h2>
+    <h3>Laat een reactie achter</h3>
 
         <!-- Display Alerts -->
         <?php if (!empty($alerts)): ?>
@@ -40,7 +40,7 @@
                 <?php if($comment->commentPublished()->toBool()): ?>
                 <div class="comment">
                     <div class="name"><?= esc($comment->commentName()) ?></div>
-                    <time><?= $comment->commentDate()->toDate('F j, Y, H:i') ?></time>
+                    <time><?= $comment->commentDate()->toDate('j F, Y, H:i') ?></time>
                     <div class="comment-content">
                         <p><?= esc($comment->commentContent()) ?></p>
                     </div>

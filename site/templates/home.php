@@ -28,7 +28,7 @@
         <?php if ($section->extra_content()->isNotEmpty()): ?>
           <br>
           <div class="extra-content">
-            <?= $section->extra_content()->kt() ?>
+            <p><?= $section->extra_content()->kt() ?></p>
           </div>
         <?php endif ?>
     </section>
