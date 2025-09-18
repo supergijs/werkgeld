@@ -11,6 +11,9 @@
     <!-- Sections -->
     <?php foreach ($site->sections()->toStructure() as $section): ?>
     <section id="<?= $section->id_name() ?>">
+        <?php if ($image = $section->section_image()->toFile()): ?>
+        <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
+        <?php endif ?>
         <h2><?= $section->section_header() ?></h2>
         <p><?= $section->section_body()->kt() ?></p>
         <?php if ($section->sub_sections()->isNotEmpty()): ?>
