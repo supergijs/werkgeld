@@ -1,6 +1,6 @@
 # werkbank.today – backbone
 
-The frotnend is at [werkbank.today](http://werkbank.today)
+The frontend is at [werkbank.today](http://werkbank.today)
  
 The backend of werkbank.today is built with [Kirby CMS](https://getkirby.com/) (v4).
 
@@ -29,4 +29,4 @@ The site is deployed using Github actions. The action uses ssh and and runs `git
 Gijs de Boer <info@supergijs.com><br>
 Emma Verhoeven <emmavrhv@gmail.com><br>
 Elliott Cost <email@elliott.computer><br>
-October 2024
+September 2025
