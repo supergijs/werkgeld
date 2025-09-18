@@ -114,7 +114,6 @@ tabs:
       all_files:
         type: files
         headline: All Files
-        query: site.index.files
         layout: cards
         size: small
         image:
