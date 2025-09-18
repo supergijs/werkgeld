@@ -1,4 +1,7 @@
 <header>
+    <?php if ($image = $site->image()->toFile()): ?>
+        <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
+        <?php endif ?>
     <h1><?= $site->title() ?></h1>
     <h2><?= $site->subtitle() ?></h2>
     <h3><?= $site->intro() ?></h3>
