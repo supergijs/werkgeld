@@ -7,8 +7,9 @@ body{
     background-color: rgb(231, 231, 231);
     min-height: 100dvh;
     font-family: Arial;
-    text-transform: lowercase;
+    /* text-transform: lowercase; */
 }
+
 header {
     /* background-color: #b8e4f2; */
     padding-bottom: 50px;
@@ -44,7 +45,9 @@ nav{
     display: block;
     position:fixed;
     top: 10px;
+    left: 10px;
     width: 200px;
+    text-align: left;
     padding: 10px;
 }
 
