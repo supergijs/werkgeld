@@ -33,7 +33,7 @@ header h1{
     /* text-transform:uppercase; */
     /* letter-spacing: 0.1em; */
     /* border: 2px solid black; */
-    padding: 1em 0;
+    /* padding: 1em 0; */
     margin: 10px 0;
 }
 
@@ -144,7 +144,7 @@ summary{
 }
 
 section details summary{
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 1.1em;
     line-height: 2;
     cursor: pointer;
