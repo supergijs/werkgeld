@@ -104,9 +104,9 @@ main {
     padding: 0px;
     margin:  0 auto;
     width: 100%;
-    max-width: 500px;
+    /* max-width: 500px; */
     line-height: 1.5;
-    padding: 8px;
+    /* padding: 8px; */
 }
 
 hr{
@@ -116,8 +116,8 @@ hr{
 
 section {
     /* background-color: #fef993; */
-    padding: 5px;
-    margin: 10px 0;
+    padding: 50px calc((100vw - 480px)/2);
+    margin: 0;
 }
 
 section h2{
@@ -137,6 +137,12 @@ section details{
     border: 1px solid black;
     padding: 0.5em 1em;
 }
+
+summary{
+    list-style-position: outside;
+    margin-left: 1.2em;
+}
+
 section details summary{
     font-style: italic;
     font-size: 1.1em;
@@ -228,11 +234,11 @@ footer {
 
 /* Contact */
 #contact {
-  display: flex;
+  /* display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid black;
-  padding: 20px;
+  align-items: center; */
+  /* gap: 100px; */
+  /* border: 1px solid black; */
+  /* padding: 20px; */
 }

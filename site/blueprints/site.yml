@@ -45,6 +45,9 @@ tabs:
                     label: Section Image
                     type: files
                     multiple: false
+                  section_background:
+                    label: Background colour
+                    type: color
                   section_body:
                     label: Section Body
                     type: textarea

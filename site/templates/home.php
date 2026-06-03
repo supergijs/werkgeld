@@ -10,7 +10,7 @@
 <main>
     <!-- Sections -->
     <?php foreach ($site->sections()->toStructure() as $section): ?>
-    <section id="<?= $section->id_name() ?>">
+    <section id="<?= $section->id_name() ?>" style="background:<?= $section->section_background() ?>">
         <?php if ($image = $section->section_image()->toFile()): ?>
         <img src="<?= $image->url() ?>" alt="<?= $image->alt() ?>">
         <?php endif ?>
