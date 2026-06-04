@@ -41,6 +41,10 @@ header h2{
     font-size: 1.8em;
 }
 
+header .buttons{
+    /* max-width: 400px; */
+    margin: 4em auto;
+}
 header .button{
     /* background-color: red; */
     border: 1px solid black;
