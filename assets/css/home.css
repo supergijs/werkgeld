@@ -48,6 +48,8 @@ header .buttons{
 header .button{
     /* background-color: red; */
     border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
     text-transform: lowercase;
     color: inherit;
     padding: 1em 2em;
@@ -263,4 +265,43 @@ footer {
   /* gap: 100px; */
   /* border: 1px solid black; */
   /* padding: 20px; */
+}
+
+.form-gy5x1ledob {
+
+}
+
+.form-gy5x1ledob label {
+        display: block;
+        padding: .4em 0 .1em 0;
+}
+
+.form-gy5x1ledob fieldset {
+	border: 0;
+}
+
+.form-gy5x1ledob fieldset label {
+        display: inline;
+        padding: 0 0 0 .1em;
+}
+
+.form-gy5x1ledob input[type=text], .form-gy5x1ledob input[type=email], .form-gy5x1ledob input[type=number] {
+}
+
+.form-gy5x1ledob input[type=submit] {
+	margin-top: 1em;
+    display: block;
+}
+
+/* client side validation */
+.form-gy5x1ledob input:invalid {
+	border: 2px dashed red;
+}
+
+.form-gy5x1ledob input:invalid:required {
+        border: 2px solid #ccc;
+}
+
+.form-gy5x1ledob input:valid {
+        border: 2px solid #ccc;
 }
