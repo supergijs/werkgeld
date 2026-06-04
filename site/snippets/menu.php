@@ -1,5 +1,5 @@
     <nav>
-    <a href="#">WERKGELD</a>
+    <a href="#"><?= $page->title() ?></a>
     <ul>
         <?php foreach ($site->sections()->toStructure() as $section): ?>
         <li> 
