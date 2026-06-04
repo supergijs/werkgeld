@@ -1,5 +1,5 @@
     <nav>
-    <a href="#"><?= $page->title() ?></a>
+    <a href="#"><?= $site->title() ?></a>
     <ul>
         <?php foreach ($site->sections()->toStructure() as $section): ?>
         <li> 
