@@ -23,8 +23,6 @@ tabs:
               intro:
                 label: Page Intro
                 type: text
-              links:
-                
 
               sections_header:
                 label: Sections

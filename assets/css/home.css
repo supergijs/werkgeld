@@ -41,6 +41,24 @@ header h2{
     font-size: 1.8em;
 }
 
+header .button{
+    /* background-color: red; */
+    border: 1px solid black;
+    text-transform: lowercase;
+    color: inherit;
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+header .button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
 nav{
     display: block;
     position:fixed;
