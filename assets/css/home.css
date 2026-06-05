@@ -253,7 +253,8 @@ footer {
     padding-top: 100px;
     text-align: center;
     font-size: 0.5em;
-    background-color: #888;
+    background-color: #444;
+    color: #999;
 }
 
 /* Contact */
